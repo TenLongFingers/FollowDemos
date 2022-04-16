@@ -12,3 +12,7 @@ for(let i = 0; i<myNumArr.length; i++){
 
     }
 }
+
+// testing something with arrays real quick
+
+let animalArr = [Fox, Tiger, Bat, Otter]
