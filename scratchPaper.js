@@ -73,4 +73,40 @@ console.log('Borf! I am ',this.name,`, the dog!`)
 const iggy = new Dog(`Iggy`, `white with black spots`);
 const amity = new Dog(`Amity`, `white and brown`)
 
-amity.bark();
+// person class
+
+// class Developer {
+//     constructor(name, eyeColor, height, favLang){
+//     this.name = name
+//     this.eyeColor = eyeColor
+//     this.height = height
+//     this.favLang = favLang
+//     }
+// }
+
+class Person {
+    constructor (name, eyeColor, height){
+        this.name = name;
+        this.eyeColor = eyeColor;
+        this.height = height;
+    }
+}
+
+sayName();{
+    console.log(`My name is ${this.name}`)
+}
+
+class Developer extends Person{
+    constructor(name, eyeColor, height, favLang){
+        super(name, eyeColor, height);
+        this.favLang = favLang
+    }
+}
+
+sayName();{
+    super.sayName();
+    console.log(`and I'm a developer!`)
+}
+const me = new Developer(`Chris`, `hazel`, `5'6"`, `JS`)
+
+
