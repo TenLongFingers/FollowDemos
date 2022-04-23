@@ -64,8 +64,13 @@ class Dog {
         this.name = name;
         this.color = color;
     }
+
+ bark() {
+console.log('Borf! I am ',this.name,`, the dog!`)
+    }
 }
 
 const iggy = new Dog(`Iggy`, `white with black spots`);
 const amity = new Dog(`Amity`, `white and brown`)
-console.log(amity)
+
+amity.bark();
