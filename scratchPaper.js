@@ -59,19 +59,19 @@
 //   };
 //   console.log(dog.name)
 
-class Dog {
-    constructor(name, color) {
-        this.name = name;
-        this.color = color;
-    }
+// class Dog {
+//     constructor(name, color) {
+//         this.name = name;
+//         this.color = color;
+//     }
 
- bark() {
-console.log('Borf! I am ',this.name,`, the dog!`)
-    }
-}
+//  bark() {
+// console.log('Borf! I am ',this.name,`, the dog!`)
+//     }
+// }
 
-const iggy = new Dog(`Iggy`, `white with black spots`);
-const amity = new Dog(`Amity`, `white and brown`)
+// const iggy = new Dog(`Iggy`, `white with black spots`);
+// const amity = new Dog(`Amity`, `white and brown`)
 
 // person class
 
@@ -91,22 +91,24 @@ class Person {
         this.height = height;
     }
 }
-
-sayName();{
+function sayName(){
     console.log(`My name is ${this.name}`)
 }
 
-class Developer extends Person{
-    constructor(name, eyeColor, height, favLang){
-        super(name, eyeColor, height);
-        this.favLang = favLang
-    }
-}
+const me = new Person(`Chris`, `hazel`, `5'6"`, `JS`)
 
-sayName();{
-    super.sayName();
-    console.log(`and I'm a developer!`)
-}
-const me = new Developer(`Chris`, `hazel`, `5'6"`, `JS`)
+sayName(me);
 
 
+// class Developer extends Person{
+//     constructor(name, eyeColor, height, favLang){
+//         super(name, eyeColor, height);
+//         this.favLang = favLang
+//     }
+// }
+
+// sayName();{
+//     super.sayName();
+//     console.log(`and I'm a developer!`)
+// }
+// const me = new Developer(`Chris`, `hazel`, `5'6"`, `JS`)
