@@ -84,31 +84,32 @@
 //     }
 // }
 
+// function sayName(person){
+    //     console.log(`My name is ${person.name}`)
+
 class Person {
     constructor (name, eyeColor, height){
         this.name = name;
         this.eyeColor = eyeColor;
         this.height = height;
     }
+    sayName(){
+        return(`My name is ${this.name}`)
+    } 
 }
-function sayName(){
-    console.log(`My name is ${this.name}`)
-}
+    
+class Developer extends Person{
+     constructor(name, eyeColor, height, favLang){
+        super(name, eyeColor, height);
+        this.favLang = favLang
+     }
+      sayName(){ 
+        return(`${super.sayName()} and I'm a developer!`);
+      }
+    }
+                
+const me = new Developer(`Chris`, `hazel`, `5'6"`, `JS`);
+const spouse = new Person(`Emma`, `blue`, `6'0"`);
 
-const me = new Person(`Chris`, `hazel`, `5'6"`, `JS`)
-
-sayName(me);
-
-
-// class Developer extends Person{
-//     constructor(name, eyeColor, height, favLang){
-//         super(name, eyeColor, height);
-//         this.favLang = favLang
-//     }
-// }
-
-// sayName();{
-//     super.sayName();
-//     console.log(`and I'm a developer!`)
-// }
-// const me = new Developer(`Chris`, `hazel`, `5'6"`, `JS`)
+ console.log(me.sayName());
+ console.log(spouse.sayName());
