@@ -59,10 +59,13 @@
 //   };
 //   console.log(dog.name)
 
-function User(username, password)
-{
-    this.username = username;
-    this.password = password;
+class Dog {
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+    }
 }
-const user1 = new User(`mrogers`, `password12321`)
 
+const iggy = new Dog(`Iggy`, `white with black spots`);
+const amity = new Dog(`Amity`, `white and brown`)
+console.log(amity)
