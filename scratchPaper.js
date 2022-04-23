@@ -35,18 +35,34 @@
 //     at node:internal/main/run_main_module:17:47
 
 
-function calculateScore(studentScore) {
-    studentScore +=5
-    studentScore *=2
-    return studentScore
-}
+// function calculateScore(studentScore) {
+//     studentScore +=5
+//     studentScore *=2
+//     return studentScore
+// }
 
-let harryScore = 35
-let hermioneScore = 49
-let ronScore = 15
+// let harryScore = 35
+// let hermioneScore = 49
+// let ronScore = 15
 
-console.log(calculateScore(harryScore))
-console.log(calculateScore(hermioneScore))
-console.log(calculateScore(ronScore))
+// console.log(calculateScore(harryScore))
+// console.log(calculateScore(hermioneScore))
+// console.log(calculateScore(ronScore))
 //make an arry and use a loop so you can have a list of everyone's scores
+
+// const dog = {
+//     'name': 'Freida',
+//     'color': 'brown/black',
+//     'hunger': 40,
+//     'mood': 'feisty',
+//     'age': 9,
+//   };
+//   console.log(dog.name)
+
+function User(username, password)
+{
+    this.username = username;
+    this.password = password;
+}
+const user1 = new User(`mrogers`, `password12321`)
 
